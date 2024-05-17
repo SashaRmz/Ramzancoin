@@ -12,6 +12,7 @@ body {
 }
 body {
   padding: 0;
+  height: 100vh;
   margin: 5px;
   overflow: hidden;
   background-color: black;
