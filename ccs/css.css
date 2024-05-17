@@ -1,0 +1,37 @@
+input[type="text"],
+input[type=""password],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="url"],
+textarea {
+  color: white;
+}
+body {
+  color: white;
+}
+body {
+  padding: 0;
+  margin: 5px;
+  overflow: hidden;
+  background-color: black;
+}
+img {
+  width: 200px;
+  height: 200px;
+  margin: 0;
+}
+img {
+  position: absolute;
+  left: 210px;
+  top: 263px;
+/*transform: translate(-50%, -50%);  пацентру типа*/
+}
+.element {
+  background-color: black;
+}
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
