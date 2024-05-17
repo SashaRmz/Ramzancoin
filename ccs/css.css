@@ -43,3 +43,31 @@ img {
   justify-content: center;
   align-items: center;
 }
+#web_app_container {
+  position: relative;
+  height: 100vh;
+}
+
+#web_app_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 50px); /* Adjust height as needed */
+  overflow-y: auto;
+}
+
+#reply_keyboard {
+  display: none; /* Hide the reply keyboard by default */
+}
+
+.telegram-message-input {
+  opacity: 0; /* Hide the text input bar */
+  height: 0px; /* Collapse the input bar to zero height */
+  border: none; /* Remove input bar border */
+  padding: 0; /* Remove input bar padding */
+}
+
+.telegram-message-input:focus {
+  opacity: 0; /* Keep input bar hidden on focus */
+}
