@@ -8,6 +8,18 @@
 <link rel="stylesheet" href="ccs/css.css">
 </head>
 <body>
+ <button onclick="hideKeyboard()">Скрыть клавиатуру</button>
+
+<script>
+  function hideKeyboard() {
+    Telegram.WebApp.sendRequest('sendMessage', {
+      text: 'Клавиатура скрыта!',
+      reply_markup: {
+        keyboard: [],
+      },
+    });
+  }
+</script>
   <script src="code/code.js"></script>
 <div class="cont">
   <img src="images/my-image.jpg" alt="plopopopopopo">
