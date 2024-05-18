@@ -31,8 +31,8 @@ img {
 }
 img {
   position: absolute;
-  left: 210px;
-  top: 263px;
+  left: 100px;
+  top: 100px;
 /*transform: translate(-50%, -50%);  пацентру типа*/
 }
 .element {
