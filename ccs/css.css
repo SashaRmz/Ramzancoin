@@ -47,3 +47,18 @@ img {
 .telegram-message-input:focus {
   opacity: 0; /* Keep input bar hidden on focus */
 }
+#ticker {
+  width: fit-content; /* Ширина бегущей строки */
+  white-space: nowrap; /* Не переносить слова на новую строку */
+  overflow: hidden; /* Скрыть текст, который выходит за рамки */
+  animation: ticker 5s linear infinite; /* Анимация */
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0); /* Начало */
+  }
+  100% {
+    transform: translateX(-100%); /* Конец */
+  }
+}
