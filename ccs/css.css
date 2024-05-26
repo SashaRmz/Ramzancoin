@@ -51,14 +51,29 @@ img {
   width: fit-content; /* Ширина бегущей строки */
   white-space: nowrap; /* Не переносить слова на новую строку */
   overflow: hidden; /* Скрыть текст, который выходит за рамки */
+  position: relative; /* Позиционирование */
   animation: ticker 5s linear infinite; /* Анимация */
+}
+
+#ticker.is-visible {
+  opacity: 1; /* Отобразить текст */
 }
 
 @keyframes ticker {
   0% {
-    transform: translateX(0); /* Начало */
+    transform: translateX(-100%); /* Текст полностью скрыт слева */
+    opacity: 0; /* Текст полностью прозрачный */
+  }
+  25% {
+    transform: translateX(0); /* Текст полностью виден */
+    opacity: 1; /* Текст полностью непрозрачный */
+  }
+  75% {
+    transform: translateX(100%); /* Текст полностью скрыт справа */
+    opacity: 0; /* Текст полностью прозрачный */
   }
   100% {
-    transform: translateX(-100%); /* Конец */
+    transform: translateX(-100%); /* Вернуться к началу */
+    opacity: 0; /* Текст полностью прозрачный */
   }
 }
