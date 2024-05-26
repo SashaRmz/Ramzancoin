@@ -1,3 +1,11 @@
+.rotated-text {
+  transform: rotate(-45deg); /* Повернуть текст на -45 градусов */
+}
+
+.rotated-letter {
+  display: inline-block; /* Преобразовать символы в блочные элементы */
+  transform: rotate(90deg); /* Повернуть каждый символ на 90 градусов */
+}
 
 input[type="text"],
 input[type=""password],
