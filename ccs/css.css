@@ -1,3 +1,4 @@
+
 input[type="text"],
 input[type=""password],
 input[type="email"],
@@ -54,6 +55,7 @@ img {
   position: relative; /* Позиционирование */
   transform: rotate(-30deg); /* Поворот текста на 30 градусов */
   animation: ticker 5s linear infinite; /* Анимация */
+  font-style: italic; /* Наклонить текст */
 }
 
 #ticker.is-visible {
@@ -62,7 +64,7 @@ img {
 
 @keyframes ticker {
   0% {
-    transform: translateX(-200%); /* Текст полностью скрыт слева */
+    transform: translateX(-200%) translateY(-100%); /* Текст полностью скрыт слева */
     opacity: 0; /* Текст полностью прозрачный */
   }
   25% {
@@ -70,7 +72,7 @@ img {
     opacity: 1; /* Текст полностью непрозрачный */
   }
   75% {
-    transform: translateX(200%) translateY(200%); /* Текст полностью скрыт справа */
+    transform: translateX(200%) translateY(100%); /* Текст полностью скрыт справа */
     opacity: 0; /* Текст полностью прозрачный */
   }
   100% {
