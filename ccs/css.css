@@ -52,6 +52,7 @@ img {
   white-space: nowrap; /* Не переносить слова на новую строку */
   overflow: hidden; /* Скрыть текст, который выходит за рамки */
   position: relative; /* Позиционирование */
+  transform: rotate(-30deg); /* Поворот текста на 30 градусов */
   animation: ticker 5s linear infinite; /* Анимация */
 }
 
@@ -61,19 +62,19 @@ img {
 
 @keyframes ticker {
   0% {
-    transform: translateX(-100%); /* Текст полностью скрыт слева */
+    transform: translateX(-200%); /* Текст полностью скрыт слева */
     opacity: 0; /* Текст полностью прозрачный */
   }
   25% {
-    transform: translateX(0); /* Текст полностью виден */
+    transform: translateX(0) translateY(0); /* Текст полностью виден */
     opacity: 1; /* Текст полностью непрозрачный */
   }
   75% {
-    transform: translateX(100%); /* Текст полностью скрыт справа */
+    transform: translateX(200%) translateY(200%); /* Текст полностью скрыт справа */
     opacity: 0; /* Текст полностью прозрачный */
   }
   100% {
-    transform: translateX(-100%); /* Вернуться к началу */
+    transform: translateX(-200%) translateY(0); /* Вернуться к началу */
     opacity: 0; /* Текст полностью прозрачный */
   }
 }
